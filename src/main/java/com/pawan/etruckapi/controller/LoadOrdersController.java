@@ -52,8 +52,8 @@ public class LoadOrdersController {
     }
 
     @GetMapping("/load") 
-    public List<LoadOrders> showLoadByShipperId(@RequestParam String shipper) {
-        shipper = "shipper:"+shipper;
-        return lOrdersService.findLoadsByShipperId(shipper);
+    public List<LoadOrders> showLoadByShipperId(@RequestParam String shipperId) {
+        shipperId = "shipper:"+shipperId;
+        return lOrdersService.findLoadsByShipperId(shipperId);
     }    
 }
